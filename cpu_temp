@@ -1,0 +1,2 @@
+#!/bin/sh
+sensors | grep "Core $1" | awk '{print $3}' | sed 's/+//' | sed 's/\.0//g'

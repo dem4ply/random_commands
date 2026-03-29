@@ -1,0 +1,2 @@
+#!/bin/sh
+cookiecutter /home/dem4ply/Documentos/proyectos/others/cookiecutter-pypackage

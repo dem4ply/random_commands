@@ -1,0 +1,2 @@
+#!/bin/sh
+ps -e -o pid,pcpu,pmem,rss,state,args --sort pmem | awk -v WIDTH=10 'NR>1 {$4=int($4/1024)"M";}{  print;}' | column -t | cut_line
